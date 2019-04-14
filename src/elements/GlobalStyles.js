@@ -58,17 +58,33 @@ img {
 }
 
 @font-face {
-  font-family: "NKGW";
-  src: local('NKGW400'), url('${font.NKGW400}') format("woff");
+  font-family: "SourceSansPro";
+  src: local('SourceSansPro300'), url('${font.SourceSansPro300}') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: local('SourceSansPro400'), url('${font.SourceSansPro400}') format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: "NKGW";
-  src: local('NKGW700'), url('${font.NKGW700}') format("woff");
+  font-family: "SourceSansPro";
+  src: local('SourceSansPro700'), url('${font.SourceSansPro700}') format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: local('SourceSansPro900'), url('${font.SourceSansPro900}') format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: block;
 }
@@ -86,7 +102,7 @@ body {
   --secondary-color-a: hsl(351, 100%, 63%);
   --secondary-color-b: hsl(32, 100%, 54%);
   background-color: var(--background-color);
-  font-family: 'NKGW', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: var(--primary-color);
