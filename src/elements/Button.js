@@ -16,8 +16,8 @@ export default styled.a`
   border-radius: 100px;
   background-image: linear-gradient(
     45deg,
-    hsl(351, 100%, 63%),
-    hsl(32, 100%, 54%)
+    hsl(330, 100%, 63%),
+    hsl(220, 100%, 54%)
   );
   color: var(--background-color);
   transition: box-shadow 342ms cubic-bezier(0.23, 1, 0.32, 1);
