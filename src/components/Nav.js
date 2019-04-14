@@ -136,11 +136,8 @@ function Nav({ intl }) {
         <Link to="/" activeStyle={NavLinkActive}>
           <NavLink>{intl.formatMessage({ id: 'nav_link1' })}</NavLink>
         </Link>
-        <Link to="/n" activeStyle={NavLinkActive}>
+        <Link to="/about" activeStyle={NavLinkActive}>
           <NavLink>{intl.formatMessage({ id: 'nav_link2' })}</NavLink>
-        </Link>
-        <Link to="/c" activeStyle={NavLinkActive}>
-          <NavLink>{intl.formatMessage({ id: 'nav_link3' })}</NavLink>
         </Link>
       </NavModal>
     </>
