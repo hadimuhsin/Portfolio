@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `FW.`,
-    author: `FW Studio`,
-    siteUrl: `https://www.fwstud.io`
+    title: `Lewis Gatsby Starter i18n`,
+    author: `@lewislbr`,
+    siteUrl: `https://www.lewis-gatsby-starter-i18n.firebaseapp.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
