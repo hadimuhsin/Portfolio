@@ -97,10 +97,9 @@ body {
 
   --background-color: hsl(0, 0%, 99%);
   --background-color-translucent: hsla(0, 0%, 99%, 0.92);
-  --primary-color: hsl(150, 3%, 14%);
-  --primary-color-light: hsla(150, 3%, 14%, 0.85);
-  --secondary-color-a: hsl(351, 100%, 63%);
-  --secondary-color-b: hsl(32, 100%, 54%);
+  --primary-color: hsl(330, 100%, 30%);
+  --primary-color-light: hsla(330, 100%, 30%, 0.85);
+  --secondary-color: hsl(351, 100%, 63%);
   background-color: var(--background-color);
   font-family: 'SourceSansPro', sans-serif;
   font-size: 19px;
