@@ -1,0 +1,83 @@
+{
+  "lang": "en",
+  "title": "FW Studio",
+  "description": "Creative studio specializing in graphic design, web design, branding and photography in Mallorca.",
+  "author": "@fwstudio",
+
+  "logo": "FW.",
+
+  "nav_link1": "Home",
+  "nav_link2": "About us",
+  "nav_link3": "Contact",
+
+  "home_title": "Graphic design, web design, branding, photography",
+
+  "hero_text": "Hello, we are FW, a creative studio where we help business and brands to be",
+  "hero_text_span": "unique",
+
+  "secondary_heading1": "Things we do",
+
+  "service1_name": "Graphic Design",
+  "service1_description1": "Posters",
+  "service1_description2": "Advertising",
+  "service1_description3": "Packaging",
+  "service1_description4": "Books and magazines",
+  "service1_description5": "Illustrations",
+
+  "service2_name": "Websites",
+  "service2_description1": "Fast",
+  "service2_description2": "Easy to use",
+  "service2_description3": "For desktop and mobile",
+  "service2_description4": "Original design",
+  "service2_description5": "Modern",
+
+  "service3_name": "Brands",
+  "service3_description1": "Brand strategy",
+  "service3_description2": "Logo design",
+  "service3_description3": "Online and offline presence",
+  "service3_description4": "Identity systems",
+  "service3_description5": "Brand renovation",
+
+  "service4_name": "Photos",
+  "service4_description1": "Social media",
+  "service4_description2": "Products",
+  "service4_description3": "Advertising",
+  "service4_description4": "Web",
+  "service4_description5": "Spaces",
+
+  "home_text1": "Our approach is simple and pragmatic, combining aesthetics and functionality, since one without the other does not generate results.",
+  "home_text2": "We want to make from the good, the best",
+
+  "secondary_heading2": "Do you have a project in mind?",
+
+  "cta_button": "Let's talk",
+
+  "about_title": "About us",
+  "about_text1": "Hello, we are Maria and Lewis, a couple of creatives from Mallorca.",
+  "about_text2": "What we do is simple (well, not that simple): we design what connects your brand or company with your audience or customers. There are a lot of details on that, and we consider them all.",
+  "about_text3": "For example, the correct application of a typeface or color, the number of clicks on a website to achieve something or how fast loads, or the combination of all that (a beautiful logo is useless if the website is slow and hard to use) influence the perception that people have of a brand. And we want to make it as positive as possible.",
+  "about_text4": "To achieve that we start studying your needs and circumstances, in order to create a strategy about which to design and build the necessary elements with the latest technologies and tools (no shabby templates or ugly logos downloaded from the internet). All we do is original, from the first stroke of a logo to the last line of code of a website.",
+  "about_text5": "Our way of work is based on collaboration: we know about our stuff, you know about your stuff, so we join and we know the double. Not a bad start, but to do it right we need communication and sincerity. We are not going to propose a solution if we don't fully believe in it. And if we can't offer anything, we'll tell you.",
+
+  "contact_title": "Contact",
+  "contact_text1": "To talk about any project in which you need help or if you want to ask us something, do not hesitate to contact us.",
+  "contact_text2": "You can send us an email to:",
+  "contact_text3": "O call us at:",
+
+  "t&p_title": "Terms and privacy",
+  "t&p_text1": "These terms of use and privacy policy apply to the website www.fwstud.io.",
+  "t&p_text2": "General Conditions",
+  "t&p_text3": "All contents, including photos, videos, texts, designs, trademarks, logos or any other element susceptible to protection by intellectual property legislation or industrial, which are accessible on this website, are our property or their legitimate owners and expressly have all rights over them.",
+  "t&p_text4": "You agree not to reproduce, duplicate, copy, sell, resell or exploit any product or part of the site. web, nor transmit any malware or virus.",
+  "t&p_text5": "User information ",
+  "t&p_text6": "When you visit this website, certain anonymous information about your device, including information about your web browser, IP address, time zone and some of the cookies that are installed on your device, is automatically collected through cookies (to obtain more information about cookies, visit ",
+  "t&p_text7": "In addition, as you browse the website, information is also collected on the individual web pages you see, the websites or search terms that refer you to the website and the information on how you interact with the website.",
+  "t&p_text8": "Basically, this information is to help detect possible risks and frauds, and more generally to improve and optimize the website (for example, generating analyzes on how customers navigate and interact with the website, and to evaluate the success of marketing campaigns and advertising).",
+  "t&p_text9": "End of the legal stuff.",
+
+  "legal": "Terms and privacy",
+
+  "notfound_title": "Page not found",
+  "notfound_text": "This page does not exist ",
+  "notfound_button": "Go home"
+}

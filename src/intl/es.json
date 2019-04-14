@@ -1,0 +1,83 @@
+{
+  "lang": "es",
+  "title": "FW Studio",
+  "description": "Estudio creativo especializado en diseño gráfico, diseño web, branding y fotografía en Mallorca.",
+  "author": "@fwstudio",
+
+  "logo": "FW.",
+
+  "nav_link1": "Inicio",
+  "nav_link2": "Nosotros",
+  "nav_link3": "Contacto",
+
+  "home_title": "Diseño gráfico, diseño web, branding, fotografía",
+
+  "hero_text": "Hola, somos FW, un estudio creativo en el que ayudamos a empresas y marcas a ser",
+  "hero_text_span": "únicas",
+
+  "secondary_heading1": "Cosas que hacemos",
+
+  "service1_name": "Diseño Gráfico",
+  "service1_description1": "Carteles",
+  "service1_description2": "Publicidad",
+  "service1_description3": "Packaging",
+  "service1_description4": "Libros y revistas",
+  "service1_description5": "Ilustraciones",
+
+  "service2_name": "Páginas web",
+  "service2_description1": "Rápidas",
+  "service2_description2": "Fáciles de usar",
+  "service2_description3": "Para ordenador y móvil",
+  "service2_description4": "Diseño original",
+  "service2_description5": "Modernas",
+
+  "service3_name": "Marcas",
+  "service3_description1": "Estrategia de marca",
+  "service3_description2": "Diseño de logotipos",
+  "service3_description3": "Presencia online y offline",
+  "service3_description4": "Sistemas de identidad",
+  "service3_description5": "Renovación de marcas",
+
+  "service4_name": "Fotos",
+  "service4_description1": "De espacios",
+  "service4_description2": "De producto",
+  "service4_description3": "Para publicidad",
+  "service4_description4": "Para web",
+  "service4_description5": "Para redes sociales",
+
+  "home_text1": "Nuestro enfoque es simple y pragmático, juntando la estética y la funcionalidad, puesto que la una sin la otra no generan resultados.",
+  "home_text2": "Queremos hacer de lo bueno, lo mejor",
+
+  "secondary_heading2": "¿Tienes algún proyecto en mente?",
+
+  "cta_button": "Hablemos",
+
+  "about_title": "Nosotros",
+  "about_text1": "Hola, somos María y Luis, una pareja de creativos de Mallorca.",
+  "about_text2": "Lo que hacemos es simple (bueno, no tan simple): diseñamos lo que conecta tu marca o empresa con tu audiencia o clientes. Hay muchos detalles en eso, y los tenemos todos en cuenta.",
+  "about_text3": "Por ejemplo, la correcta aplicación de una tipografía o color, el número de clicks necesarios en una página web para conseguir algo o lo rápido que se carga, o la combinación de todo eso (un bonito logo no sirve de nada si la página web es lenta y difícil de usar) influye en la percepción que la gente tiene de una marca. Y queremos que sea lo más positiva posible.",
+  "about_text4": "Para conseguir eso empezamos estudiando tus necesidades y circunstancias, a fin de crear una estrategia sobre la que diseñar y construir los elementos necesarios con las últimas tecnologías y herramientas (nada de platillas web cutres o logos feos descargados de internet). Todo lo que hacemos es original, desde el primer trazo del logo hasta la última línea de código de la página web.",
+  "about_text5": "Nuestra manera de trabajar se basa en la colaboración: nosotros sabemos de lo nuestro, tú de lo tuyo, lo juntamos y sabemos el doble. No está mal para empezar, pero para hacerlo bien hace falta comunicación y sinceridad. No vamos a ofrecerte una solución si no creemos firmemente en ella, y si no tenemos nada que ofrecerte, te lo diremos.",
+
+  "contact_title": "Contacto",
+  "contact_text1": "Para hablar de cualquier proyecto en el que necesites ayuda o si quieres preguntarnos algo, no dudes en contactar con nosotros.",
+  "contact_text2": "Puedes enviarnos un email a:",
+  "contact_text3": "O llamarnos al:",
+
+  "t&p_title": "Términos y privacidad",
+  "t&p_text1": "Estos Términos de uso y la Política de privacidad se aplican al sitio web www.fwstud.io.",
+  "t&p_text2": "Condiciones generales",
+  "t&p_text3": "Todos los contenidos, incluidos fotos, videos, textos, diseños, marcas comerciales, logotipos o cualquier otro elemento susceptible de protección por la legislación de propiedad intelectual o industrial, que están accesibles en este sitio web, son de mi propiedad o de sus legítimos titulares y están reservados todos los derechos sobre los mismos.",
+  "t&p_text4": "Usted acepta no reproducir, duplicar, copiar, vender, revender o explotar ningún producto o parte del sitio web, ni transmitirle ningún malware o virus.",
+  "t&p_text5": "Información de los usuarios",
+  "t&p_text6": "Cuando visita este sitio web, cierta información anónima sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas de las cookies que están instaladas en su dispositivo, se recopila automáticamente a través de cookies (para obtener más información sobre las cookies, visite ",
+  "t&p_text7": "Además, a medida que navega por el sitio web, también se recopila información sobre las páginas web individuales que ve, los sitios web o los términos de búsqueda que lo remiten al sitio web y la información sobre cómo interactúa con el sitio web.",
+  "t&p_text8": "Básicamente, esta información es para ayudar a detectar posibles riesgos y fraudes, y más generalmente para mejorar y optimizar el sitio web (por ejemplo, generando análisis sobre cómo los clientes navegan e interactúan con el sitio web, y para evaluar el éxito de las campañas de marketing y publicidad).",
+  "t&p_text9": "Fin del rollo legal.",
+
+  "legal": "Términos y privacidad",
+
+  "notfound_title": "Página no encontada",
+  "notfound_text": "Ésta página no existe ",
+  "notfound_button": "Ir al inicio"
+}
