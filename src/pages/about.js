@@ -6,9 +6,9 @@ import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Heading1 from '../elements/Heading1';
 import TextBody from '../elements/TextBody';
-import fwstudio from '../images/fw-studio.gif';
-import Heading2 from '../elements/Heading2';
 import Button from '../elements/Button';
+
+import image1 from '../images/image1.jpg';
 
 const ImageUs = styled.img`
   margin: 0 auto 3vh auto;
@@ -23,24 +23,14 @@ function About({ intl }) {
     <Layout>
       <Head title={intl.formatMessage({ id: 'about_title' })} />
       <Heading1>{intl.formatMessage({ id: 'about_title' })}</Heading1>
-      <TextBody>{intl.formatMessage({ id: 'about_text1' })}</TextBody>
-      <ImageUs src={fwstudio} alt="fw studio" />
+      <ImageUs src={image1} alt="monkeys" />
       <TextBodyWithMarginBottom>
+        {intl.formatMessage({ id: 'about_text1' })}
+        <br />
+        <br />
         {intl.formatMessage({ id: 'about_text2' })}
-        <br />
-        <br />
-        {intl.formatMessage({ id: 'about_text3' })}
-        <br />
-        <br />
-        {intl.formatMessage({ id: 'about_text4' })}
-        <br />
-        <br />
-        {intl.formatMessage({ id: 'about_text5' })}
       </TextBodyWithMarginBottom>
-      <Heading2>
-        {intl.formatMessage({ id: 'secondary_heading2' })}
-      </Heading2>
-      <Link to="/c">
+      <Link to="/">
         <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
       </Link>
     </Layout>
