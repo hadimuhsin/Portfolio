@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-function Head({ intl }) {
+function Head({ intl, title }) {
   return (
     <Helmet
       htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}`, }}
-      title={intl.formatMessage({ id: 'title' })}
+      title={title}
       titleTemplate={`%s ― ${intl.formatMessage({ id: 'title' })}`}
       meta={[
         {
