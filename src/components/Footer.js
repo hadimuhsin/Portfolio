@@ -18,7 +18,7 @@ const Container = styled.footer`
 function Footer({ intl }) {
   return (
     <Container>
-      <Link to="/t&p">{intl.formatMessage({ id: 'legal' })}</Link>
+      <Link to="/">{intl.formatMessage({ id: 'legal' })}</Link>
       <p>
         © {new Date().getFullYear()}, {intl.formatMessage({ id: 'title' })}
       </p>
