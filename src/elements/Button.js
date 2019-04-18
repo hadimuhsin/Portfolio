@@ -9,7 +9,7 @@ export default styled.a`
   margin-right: auto;
   margin-bottom: 5vh;
 
-  width: 40%;
+  width: 25%;
   font-size: 28px;
   line-height: 3;
   font-weight: bold;
@@ -27,8 +27,7 @@ export default styled.a`
   }
 
   @media (max-width: 849px) {
-    width: 85%;
-    line-height: 2.7;
+    width: 75%;
     font-size: 23px;
   }
 `;
