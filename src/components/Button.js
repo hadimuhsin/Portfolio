@@ -7,7 +7,8 @@ export default styled.a`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 
   width: 25%;
   font-size: 28px;
