@@ -1,13 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
-
-const TextBodyWithMarginBottom = styled(TextBody)`
-  margin-bottom: 10vh;
-`;
 
 function About({ intl, data }) {
   return (
@@ -15,12 +10,12 @@ function About({ intl, data }) {
       <Head title={intl.formatMessage({ id: 'about_title' })} />
       <Heading1>{intl.formatMessage({ id: 'about_title' })}</Heading1>
       <Image fluid={data.image1.childImageSharp.fluid} alt="image1" />
-      <TextBodyWithMarginBottom>
+      <TextBody>
         {intl.formatMessage({ id: 'about_text1' })}
         <br />
         <br />
         {intl.formatMessage({ id: 'about_text2' })}
-      </TextBodyWithMarginBottom>
+      </TextBody>
       <Link to="/">
         <Button>{intl.formatMessage({ id: 'contact_button' })}</Button>
       </Link>
