@@ -3,13 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-
-import Heading1 from '../elements/Heading1';
-import Heading2 from '../elements/Heading2';
-import Button from '../elements/Button';
-import Image from '../elements/Image';
+import { Button, Head, Heading1, Heading2, Image, Layout } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;

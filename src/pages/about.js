@@ -3,12 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Heading1 from '../elements/Heading1';
-import TextBody from '../elements/TextBody';
-import Button from '../elements/Button';
-import Image from '../elements/Image';
+import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
 
 const TextBodyWithMarginBottom = styled(TextBody)`
   margin-bottom: 15vh;

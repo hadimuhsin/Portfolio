@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from './Header';
-import Footer from './Footer';
-
-import GlobalStyles from '../elements/GlobalStyles';
+import { Footer, GlobalStyles, Header } from '../components';
 
 const Wrapper = styled.div`
   padding: 0 var(--sides-padding-desktop);
