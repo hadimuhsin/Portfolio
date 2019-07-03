@@ -6,7 +6,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
 
 const TextBodyWithMarginBottom = styled(TextBody)`
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 `;
 
 function About({ intl, data }) {

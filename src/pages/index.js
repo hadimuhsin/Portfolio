@@ -10,7 +10,7 @@ const TextHome = styled.p`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 
   font-size: 22px;
   line-height: 1.6;
@@ -27,7 +27,6 @@ function Index({ intl, data }) {
       <Head title={intl.formatMessage({ id: 'home_title' })} />
       <Heading1>{intl.formatMessage({ id: 'hero_text' })} </Heading1>
       <Image fluid={data.image2.childImageSharp.fluid} alt="image1" />
-      <Heading2>{intl.formatMessage({ id: 'secondary_heading1' })}</Heading2>
       <TextHome>{intl.formatMessage({ id: 'home_text' })}</TextHome>
       <Link to="/about">
         <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
