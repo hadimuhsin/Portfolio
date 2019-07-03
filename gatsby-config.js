@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter i18n`,
-    author: `@lewislbr`,
-    siteUrl: `https://www.lewis-gatsby-starter-i18n.firebaseapp.com`
+    author: `Lewis Llobera`,
+    twitter: `@lewislbr`,
+    email: `billobera@gmail.com`,
+    siteUrl: `https://www.lewis-gatsby-starter-i18n.firebaseapp.com`,
+    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-i18n`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,11 +21,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `FW Studio`,
-        short_name: `FW`,
+        name: `Lewis Gatsby Starter i18n`,
+        short_name: `LGSi18n`,
         start_url: `/`,
-        background_color: `#fcfcfc`,
-        theme_color: `#fcfcfc`,
+        background_color: `#fafafa`,
+        theme_color: `#fafafa`,
         display: `standalone`,
       },
     },
@@ -31,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-134643417-1',
+        trackingId: 'UA-134643417-6',
         head: true,
         anonymize: true,
       },
