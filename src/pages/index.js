@@ -30,7 +30,7 @@ function Index({ intl, data }) {
       <Heading2>{intl.formatMessage({ id: 'secondary_heading1' })}</Heading2>
       <TextHome>{intl.formatMessage({ id: 'home_text' })}</TextHome>
       <Link to="/about">
-        <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
+        <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
       </Link>
     </Layout>
   );
@@ -42,7 +42,7 @@ export const query = graphql`
   query {
     image2: file(relativePath: { eq: "image2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, maxHeight: 200) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

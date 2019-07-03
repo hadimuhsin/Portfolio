@@ -22,7 +22,7 @@ function About({ intl, data }) {
         {intl.formatMessage({ id: 'about_text2' })}
       </TextBodyWithMarginBottom>
       <Link to="/">
-        <Button>{intl.formatMessage({ id: 'cta_button' })}</Button>
+        <Button>{intl.formatMessage({ id: 'contact_button' })}</Button>
       </Link>
     </Layout>
   );
