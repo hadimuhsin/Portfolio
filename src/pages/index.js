@@ -26,9 +26,9 @@ function Index({ intl, data }) {
     <Layout>
       <Head title={intl.formatMessage({ id: 'home_title' })} />
       <Heading1>{intl.formatMessage({ id: 'hero_text' })} </Heading1>
-      <TextHome>{intl.formatMessage({ id: 'home_text' })}</TextHome>
+      <TextHome>{intl.formatMessage({ id: 'home_text1' })}</TextHome>
       <Image fluid={data.image2.childImageSharp.fluid} alt="image1" />
-      <TextBody>{intl.formatMessage({ id: 'home_text' })}</TextBody>
+      <TextBody>{intl.formatMessage({ id: 'home_text2' })}</TextBody>
       <Link to="/about">
         <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
       </Link>
