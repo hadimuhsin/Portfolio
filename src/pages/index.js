@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, Head, Heading1, Heading2, Image, Layout } from '../components';
+import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;
@@ -26,8 +26,9 @@ function Index({ intl, data }) {
     <Layout>
       <Head title={intl.formatMessage({ id: 'home_title' })} />
       <Heading1>{intl.formatMessage({ id: 'hero_text' })} </Heading1>
-      <Image fluid={data.image2.childImageSharp.fluid} alt="image1" />
       <TextHome>{intl.formatMessage({ id: 'home_text' })}</TextHome>
+      <Image fluid={data.image2.childImageSharp.fluid} alt="image1" />
+      <TextBody>{intl.formatMessage({ id: 'home_text' })}</TextBody>
       <Link to="/about">
         <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
       </Link>
