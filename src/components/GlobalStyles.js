@@ -59,7 +59,7 @@ img {
 
 @font-face {
   font-family: "SourceSansPro";
-  src: local('SourceSansPro300'), url('${font.SourceSansPro300}') format("woff2");
+  src: url('${font.SourceSansPro300}') format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: block;
@@ -67,7 +67,7 @@ img {
 
 @font-face {
   font-family: "SourceSansPro";
-  src: local('SourceSansPro400'), url('${font.SourceSansPro400}') format("woff2");
+  src: url('${font.SourceSansPro400}') format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -75,7 +75,7 @@ img {
 
 @font-face {
   font-family: "SourceSansPro";
-  src: local('SourceSansPro700'), url('${font.SourceSansPro700}') format("woff2");
+  src: url('${font.SourceSansPro700}') format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: block;
@@ -83,7 +83,7 @@ img {
 
 @font-face {
   font-family: "SourceSansPro";
-  src: local('SourceSansPro900'), url('${font.SourceSansPro900}') format("woff2");
+  src: url('${font.SourceSansPro900}') format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: block;
