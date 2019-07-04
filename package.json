@@ -1,6 +1,6 @@
 {
   "name": "lewis-gatsby-starter-i18n",
-  "description": "A custom Gatsby starter template to start a new multilanguage website.",
+  "description": "A custom Gatsby starter template to start a multilanguage website.",
   "repository": {
     "type": "git",
     "url": "https://github.com/lewislbr/lewis-gatsby-starter-i18n"

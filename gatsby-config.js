@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter i18n`,
-    description: `A custom Gatsby starter template to start a new multilanguage website.`,
+    description: `A custom Gatsby starter template to start a multilanguage website.`,
     author: `Lewis Llobera`,
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
