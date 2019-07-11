@@ -6,7 +6,7 @@ export default styled.h1`
   font-size: 80px;
   line-height: 1.2;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -4px;
 
   @media (max-width: 849px) {
