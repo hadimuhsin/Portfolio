@@ -58,33 +58,17 @@ img {
 }
 
 @font-face {
-  font-family: "SourceSansPro";
-  src: url('${font.SourceSansPro300}') format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url('${font.SourceSansPro400}') format("woff2");
+  font-family: "IBMPlexMono";
+  src: url('${font.IBMPlexMono400}') format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: "SourceSansPro";
-  src: url('${font.SourceSansPro700}') format("woff2");
+  font-family: "IBMPlexMono";
+  src: url('${font.IBMPlexMono700}') format("woff2");
   font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url('${font.SourceSansPro900}') format("woff2");
-  font-weight: 900;
   font-style: normal;
   font-display: block;
 }
@@ -101,7 +85,7 @@ body {
   --primary-color-light: hsla(0, 0%, 10%, 0.85);
   --secondary-color: hsl(351, 100%, 63%);
   background-color: var(--background-color);
-  font-family: 'SourceSansPro', sans-serif;
+  font-family: 'IBMPlexMono', sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: var(--primary-color);
