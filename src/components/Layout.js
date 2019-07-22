@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   }
 `;
 
-function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
