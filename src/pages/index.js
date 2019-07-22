@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { injectIntl, Link } from 'gatsby-plugin-intl';
+import { injectIntl } from 'gatsby-plugin-intl';
 
-import { Button, Head, HeadingXL, Layout } from '../components';
+import { HeadingXL, Layout, SEO } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;
@@ -20,15 +20,12 @@ const TextHome = styled.p`
   }
 `;
 
-function Index({ intl, data }) {
+function Index({ intl }) {
   return (
     <Layout>
-      <Head title={intl.formatMessage({ id: 'home_title' })} />
-      <HeadingXL>{intl.formatMessage({ id: 'hero_text' })} </HeadingXL>
+      <SEO title={intl.formatMessage({ id: 'home_title' })} />
+      <HeadingXL>{intl.formatMessage({ id: 'hero_text' })}</HeadingXL>
       <TextHome>{intl.formatMessage({ id: 'home_text1' })}</TextHome>
-      <Link to="/about">
-        <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
-      </Link>
     </Layout>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-function Head({ intl, title }) {
+function SEO({ intl, title }) {
   return (
     <Helmet
       htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}`, }}
@@ -30,4 +30,4 @@ function Head({ intl, title }) {
   );
 }
 
-export default injectIntl(Head);
+export default injectIntl(SEO);
