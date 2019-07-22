@@ -7,7 +7,6 @@ export default styled.div`
   text-align: center;
   margin: 10vh auto 5vh auto;
   padding: 20px 50px;
-
   width: 300px;
   font-size: 26px;
   font-weight: bold;
