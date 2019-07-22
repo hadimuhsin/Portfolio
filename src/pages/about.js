@@ -4,7 +4,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import { Button, HeadingXL, Image, Layout, SEO, TextBody } from '../components';
 
-function About({ intl, data }) {
+const About = ({ intl, data }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'about_title' })} />
@@ -21,7 +21,7 @@ function About({ intl, data }) {
       </Link>
     </Layout>
   );
-}
+};
 
 export default injectIntl(About);
 

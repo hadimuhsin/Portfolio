@@ -3,7 +3,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import { Button, HeadingXL, Layout, SEO, TextBody } from '../components';
 
-function NotFoundPage({ intl }) {
+const NotFoundPage = ({ intl }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'notfound_title' })} />
@@ -19,6 +19,6 @@ function NotFoundPage({ intl }) {
       </Link>
     </Layout>
   );
-}
+};
 
 export default injectIntl(NotFoundPage);

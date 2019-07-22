@@ -20,7 +20,7 @@ const TextHome = styled.p`
   }
 `;
 
-function Index({ intl }) {
+const Home = ({ intl }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'home_title' })} />
@@ -28,6 +28,6 @@ function Index({ intl }) {
       <TextHome>{intl.formatMessage({ id: 'home_text1' })}</TextHome>
     </Layout>
   );
-}
+};
 
-export default injectIntl(Index);
+export default injectIntl(Home);
