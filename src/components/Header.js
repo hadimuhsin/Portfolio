@@ -4,21 +4,6 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import { Nav } from '../components';
 
-const TopLine = styled.div`
-  width: 100%;
-  position: fixed;
-  left: auto;
-  right: auto;
-  top: 0px;
-  z-index: 999;
-  height: 5px;
-  background-image: linear-gradient(
-    45deg,
-    hsl(330, 100%, 63%),
-    hsl(220, 100%, 54%)
-  );
-`;
-
 const Bar = styled.header`
   width: 100%;
   position: fixed;
@@ -61,7 +46,6 @@ const Logo = styled.p`
 function Header({ intl }) {
   return (
     <Bar>
-      <TopLine />
       <Wrapper>
         <Logo>
           <Link to="/">{intl.formatMessage({ id: 'logo' })}</Link>
