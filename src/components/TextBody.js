@@ -7,5 +7,5 @@ export default styled.p`
   margin-right: auto;
   margin-bottom: 5vh;
   
-  color: var(--primary-color-light);
+  color: var(--dark-color-light);
 `;
