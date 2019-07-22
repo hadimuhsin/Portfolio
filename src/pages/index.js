@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, Head, Heading1, Layout, TextBody } from '../components';
+import { Button, Head, HeadingXL, Layout } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;
@@ -24,9 +24,8 @@ function Index({ intl, data }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'home_title' })} />
-      <Heading1>{intl.formatMessage({ id: 'hero_text' })} </Heading1>
+      <HeadingXL>{intl.formatMessage({ id: 'hero_text' })} </HeadingXL>
       <TextHome>{intl.formatMessage({ id: 'home_text1' })}</TextHome>
-      <TextBody>{intl.formatMessage({ id: 'home_text2' })}</TextBody>
       <Link to="/about">
         <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
       </Link>

@@ -2,13 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
+import { Button, Head, HeadingXL, Image, Layout, TextBody } from '../components';
 
 function About({ intl, data }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'about_title' })} />
-      <Heading1>{intl.formatMessage({ id: 'about_title' })}</Heading1>
+      <HeadingXL>{intl.formatMessage({ id: 'about_title' })}</HeadingXL>
       <Image fluid={data.image1.childImageSharp.fluid} alt="image1" />
       <TextBody>
         {intl.formatMessage({ id: 'about_text1' })}

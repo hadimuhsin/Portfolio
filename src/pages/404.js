@@ -1,13 +1,13 @@
 import React from 'react';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, Head, Heading1, Layout, TextBody } from '../components';
+import { Button, Head, HeadingXL, Layout, TextBody } from '../components';
 
 function NotFoundPage({ intl }) {
   return (
     <Layout>
       <Head title={intl.formatMessage({ id: 'notfound_title' })} />
-      <Heading1>{intl.formatMessage({ id: 'notfound_title' })}</Heading1>
+      <HeadingXL>{intl.formatMessage({ id: 'notfound_title' })}</HeadingXL>
       <TextBody>
         {intl.formatMessage({ id: 'notfound_text' })}{' '}
         <span role="img" aria-label="duh">
