@@ -13,13 +13,22 @@ const Wrapper = styled.div`
   }
 `;
 
+const Content = styled.main`
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media (max-width: 849px) {
+    width: 100%;
+  }
+`;
+
 const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
       <Header />
       <Wrapper>
-        <main>{children}</main>
+        <Content>{children}</Content>
         <Footer />
       </Wrapper>
     </>
