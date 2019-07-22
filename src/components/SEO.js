@@ -2,10 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { injectIntl } from 'gatsby-plugin-intl';
 
-function SEO({ intl, title }) {
+const SEO = ({ intl, title }) => {
   return (
     <Helmet
-      htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}`, }}
+      htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}` }}
       title={title}
       titleTemplate={`%s ― ${intl.formatMessage({ id: 'title' })}`}
       meta={[
@@ -28,6 +28,6 @@ function SEO({ intl, title }) {
       ]}
     />
   );
-}
+};
 
 export default injectIntl(SEO);

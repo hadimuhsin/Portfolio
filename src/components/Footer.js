@@ -14,7 +14,7 @@ const Container = styled.footer`
   }
 `;
 
-function Footer({ intl }) {
+const Footer = ({ intl }) => {
   return (
     <Container>
       <p>
@@ -22,6 +22,6 @@ function Footer({ intl }) {
       </p>
     </Container>
   );
-}
+};
 
 export default injectIntl(Footer);

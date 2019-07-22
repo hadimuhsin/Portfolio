@@ -35,7 +35,7 @@ const Logo = styled.p`
   }
 `;
 
-function Header({ intl }) {
+const Header = ({ intl }) => {
   return (
     <Bar>
       <Logo>
@@ -44,6 +44,6 @@ function Header({ intl }) {
       <Nav />
     </Bar>
   );
-}
+};
 
 export default injectIntl(Header);
