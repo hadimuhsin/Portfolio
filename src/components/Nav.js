@@ -26,7 +26,7 @@ const NavIconLine = styled.span`
   position: absolute;
   height: 3px;
   width: 100%;
-  background: var(--primary-color);
+  background: var(--dark-color);
   border-radius: 20px;
   opacity: 1;
   left: 0;
@@ -94,7 +94,7 @@ const NavModal = styled.nav`
     left: 0;
     right: 0;
 
-    background-color: var(--background-color-translucent);
+    background-color: var(--light-color-translucent);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
