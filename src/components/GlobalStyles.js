@@ -34,7 +34,6 @@ h6 {
   margin-inline-start: 0;
   -webkit-margin-end: 0;
   margin-inline-end: 0;
-
   display: inline-block;
   font-size: inherit;
 }
@@ -78,20 +77,19 @@ body {
   line-height: 1;
   --sides-padding-desktop: 3%;
   --sides-padding-mobile: 5%;
-
-  --background-color: hsl(0, 0%, 99%);
-  --background-color-translucent: hsla(0, 0%, 99%, 0.92);
-  --primary-color: hsl(0, 0%, 10%);
-  --primary-color-light: hsla(0, 0%, 10%, 0.85);
-  --secondary-color: hsl(351, 100%, 63%);
+  --light-color: hsl(0, 0%, 99%);
+  --light-color-translucent: hsla(0, 0%, 99%, 0.92);
+  --dark-color: hsl(0, 0%, 10%);
+  --dark-color-light: hsla(0, 0%, 10%, 0.85);
+  --accent-color: hsl(351, 100%, 63%);
   background-color: var(--background-color);
   font-family: 'IBMPlexMono', sans-serif;
   font-size: 19px;
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--dark-color);
 
   @media (max-width: 849px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 `;
