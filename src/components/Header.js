@@ -5,28 +5,21 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 import { Nav } from '../components';
 
 const Bar = styled.header`
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   left: auto;
   right: auto;
   z-index: 999;
   height: 8vh;
-  top: 5px;
-
-  background-color: var(--background-color-translucent);
+  width: 100%;
+  padding: 0 var(--sides-padding-desktop);
+  top: 0px;
+  background-color: var(--light-color-translucent);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  max-width: 1400px;
-  padding: 0 var(--sides-padding-desktop);
-  margin-left: auto;
-  margin-right: auto;
 
   @media (max-width: 849px) {
     padding: 0 var(--sides-padding-mobile);
@@ -34,24 +27,21 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.p`
-  font-size: 44px;
-  font-weight: 400;
-  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 700;
 
   @media (max-width: 849px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 `;
 
 function Header({ intl }) {
   return (
     <Bar>
-      <Wrapper>
-        <Logo>
-          <Link to="/">{intl.formatMessage({ id: 'logo' })}</Link>
-        </Logo>
-        <Nav />
-      </Wrapper>
+      <Logo>
+        <Link to="/">{intl.formatMessage({ id: 'logo' })}</Link>
+      </Logo>
+      <Nav />
     </Bar>
   );
 }
