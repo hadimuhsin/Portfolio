@@ -81,7 +81,7 @@ body {
   --light-color-translucent: hsla(0, 0%, 99%, 0.92);
   --dark-color: hsl(0, 0%, 10%);
   --dark-color-light: hsla(0, 0%, 10%, 0.85);
-  --accent-color: hsl(339, 100%, 5%);
+  --accent-color: hsl(339, 100%, 55%);
   background-color: var(--background-color);
   font-family: 'IBMPlexMono', sans-serif;
   font-size: 19px;
