@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export default styled.p`
-  max-width: 45em;
-  line-height: 1.4;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
-  
+  display: block;
+  line-height: 1.5;
+  margin: 0 5% 5vh 5%;
+  letter-spacing: -.003em;
+
   color: var(--dark-color-light);
+
+  @media (max-width: 849px) {
+    margin: 0 0 5vh 0;
+  }
 `;
