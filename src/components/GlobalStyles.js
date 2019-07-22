@@ -14,7 +14,6 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -79,10 +78,11 @@ body {
   --sides-padding-mobile: 5%;
   --light-color: hsl(0, 0%, 99%);
   --light-color-translucent: hsla(0, 0%, 99%, 0.92);
-  --dark-color: hsl(0, 0%, 10%);
-  --dark-color-light: hsla(0, 0%, 10%, 0.85);
+  --dark-color: hsl(0, 0%, 15%);
+  --dark-color-light: hsla(0, 0%, 15%, 0.9);
+  --dark-color-lighter: hsla(00, 0%, 15%, 0.7);
   --accent-color: hsl(339, 100%, 55%);
-  background-color: var(--background-color);
+  background-color: var(--light-color);
   font-family: 'IBMPlexMono', sans-serif;
   font-size: 19px;
   font-weight: 400;
