@@ -1,9 +1,8 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, Head, Heading1, Image, Layout, TextBody } from '../components';
+import { Button, Head, Heading1, Layout, TextBody } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;
@@ -14,7 +13,7 @@ const TextHome = styled.p`
 
   font-size: 22px;
   line-height: 1.6;
-  color: var(--primary-color-light);
+  color: var(--dark-color-light);
 
   @media (max-width: 849px) {
     font-size: 19px;
@@ -27,7 +26,6 @@ function Index({ intl, data }) {
       <Head title={intl.formatMessage({ id: 'home_title' })} />
       <Heading1>{intl.formatMessage({ id: 'hero_text' })} </Heading1>
       <TextHome>{intl.formatMessage({ id: 'home_text1' })}</TextHome>
-      <Image fluid={data.image2.childImageSharp.fluid} alt="image1" />
       <TextBody>{intl.formatMessage({ id: 'home_text2' })}</TextBody>
       <Link to="/about">
         <Button>{intl.formatMessage({ id: 'learn_button' })}</Button>
@@ -37,15 +35,3 @@ function Index({ intl, data }) {
 }
 
 export default injectIntl(Index);
-
-export const query = graphql`
-  query {
-    image2: file(relativePath: { eq: "image2.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
