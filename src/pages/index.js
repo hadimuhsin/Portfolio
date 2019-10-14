@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
-
 import { BREAKPOINT } from '../utils/constants';
-
 import {
   Header,
   HeadingXL,
@@ -12,7 +10,6 @@ import {
   SEO,
   TextBody,
   TextDate,
-  Nav,
 } from '../components';
 
 const Hero = styled.div`

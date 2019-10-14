@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Nav } from '../components';
 import { FixedBar } from '../components';
 import { BREAKPOINT } from '../utils/constants';
 

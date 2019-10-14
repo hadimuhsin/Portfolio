@@ -126,10 +126,6 @@ const NavLink = styled.div`
   }
 `;
 
-const NavLinkActive = {
-  textDecoration: 'underline',
-};
-
 export const Header = () => {
   return (
     <HeaderWrapper>
@@ -142,6 +138,9 @@ export const Header = () => {
         <NavIconLine4 />
       </NavIcon>
       <NavModal id="nav">
+      <Link to="/">
+          <NavLink>Home</NavLink>
+        </Link>
         <Link to="/works">
           <NavLink>Works</NavLink>
         </Link>
