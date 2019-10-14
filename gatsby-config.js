@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Lewis Gatsby Starter i18n`,
-    description: `A custom Gatsby starter template to start a multilanguage website.`,
+    title: `Lewis Gatsby Starter Blog`,
+    description: `A custom Gatsby starter template to start a blog or personal website.`,
     author: `Lewis Llobera`,
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
-    siteUrl: `https://www.lewis-gatsby-starter-i18n.firebaseapp.com`,
-    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-i18n`
+    siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
+    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-blog`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,13 +17,44 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 50,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              quality: 75,
+              withWebp: true,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lewis Gatsby Starter i18n`,
-        short_name: `LGSi18n`,
+        name: `Lewis Gatsby Starter Blog`,
+        short_name: `LGSB`,
         start_url: `/`,
         background_color: `#fcfcfc`,
         theme_color: `#fcfcfc`,
@@ -32,24 +63,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-134643417-6',
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-intl`,
-      options: {
-        path: `${__dirname}/src/intl`,
-        languages: [`es`, `en`],
-        defaultLanguage: `es`,
-        redirect: true,
-      },
-    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
   ],
-}
+};

@@ -1,24 +1,41 @@
 import React from 'react';
-import { injectIntl, Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import { Button, HeadingXL, Layout, SEO, TextBody } from '../components';
 
-const NotFoundPage = ({ intl }) => {
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const ButtonCentered = styled(Button)`
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+`;
+
+const NotFoundPage = () => {
   return (
-    <Layout>
-      <SEO title={intl.formatMessage({ id: 'notfound_title' })} />
-      <HeadingXL>{intl.formatMessage({ id: 'notfound_title' })}</HeadingXL>
-      <TextBody>
-        {intl.formatMessage({ id: 'notfound_text' })}{' '}
-        <span role="img" aria-label="duh">
-          😓
-        </span>
-      </TextBody>
-      <Link to="/">
-        <Button>{intl.formatMessage({ id: 'notfound_button' })}</Button>
-      </Link>
-    </Layout>
+    <>
+      <SEO title="404: Not found" />
+      <Layout>
+        <Wrapper>
+          <HeadingXL>NOT FOUND</HeadingXL>
+          <TextBody style={{ textAlign: 'center' }}>
+            This page doesn&#39;t exist{' '}
+            <span role="img" aria-label="duh">
+              😓
+            </span>
+          </TextBody>
+          <Link to="/">
+            <ButtonCentered>Go home</ButtonCentered>
+          </Link>
+        </Wrapper>
+      </Layout>
+    </>
   );
 };
 
-export default injectIntl(NotFoundPage);
+export default NotFoundPage;

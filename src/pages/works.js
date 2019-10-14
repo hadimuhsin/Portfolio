@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import {
   Button,
-  HeaderBack,
+  Header,
   HeadingXL,
   Image,
   Layout,
@@ -11,13 +11,13 @@ import {
   TextBody,
 } from '../components';
 
-const About = ({ data }) => {
+const Works = ({ data }) => {
   return (
     <>
-      <SEO title="About" />
-      <HeaderBack />
+      <SEO title="Works" />
+      <Header />
       <Layout>
-        <HeadingXL>About</HeadingXL>
+        <HeadingXL>Works</HeadingXL>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
         <TextBody>
           Building mr concerns servants in he outlived am breeding. He so lain
@@ -40,7 +40,7 @@ const About = ({ data }) => {
   );
 };
 
-export default About;
+export default Works;
 
 export const query = graphql`
   query {

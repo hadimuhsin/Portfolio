@@ -1,33 +1,79 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { injectIntl } from 'gatsby-plugin-intl';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ intl, title }) => {
+export const SEO = ({ lang, title, description }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `
+  );
+
+  const metaDescription = description || site.siteMetadata.description;
+
   return (
     <Helmet
-      htmlAttributes={{ lang: `${intl.formatMessage({ id: 'lang' })}` }}
+      htmlAttributes={{
+        lang,
+      }}
       title={title}
-      titleTemplate={`%s ― ${intl.formatMessage({ id: 'title' })}`}
+      titleTemplate={`%s ― ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: `${intl.formatMessage({ id: 'description' })}`,
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: `${intl.formatMessage({ id: 'title' })}`,
+          content: title,
         },
         {
           property: `og:description`,
-          content: `${intl.formatMessage({ id: 'description' })}`,
+          content: metaDescription,
         },
         {
-          property: `author`,
-          content: `${intl.formatMessage({ id: 'author' })}`,
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
         },
       ]}
     />
   );
 };
 
-export default injectIntl(SEO);
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``,
+};
+
+SEO.propTypes = {
+  lang: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  description: PropTypes.string,
+};
