@@ -9705,14 +9705,6 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important;
 }
 
-.navbar.navbar-light.navbar-expand-md.fixed-top.navbar {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 10px 5px;
-  color: #71706e;
-  font-size: 18px;
-}
-
 .col-6.col-sm-6.col-lg-4.flex-grow-1.project-thumbnail {
   padding-right: 20px;
   padding-left: 20px;
@@ -9747,5 +9739,20 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 auto;
   font-family: Roboto, sans-serif;
   padding-top: 60px;
+}
+
+.col-sm-12.col-md-9.col-lg-9.col-xl-9 {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.navbar.navbar-light.navbar-expand.fixed-top.navbar {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #71706e;
+  font-size: 18px;
 }
 
