@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-family: Roboto, sans-serif;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -8,24 +8,55 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/theme_1577697252968.css">
 </head>
 
-<body style="margin-left: auto;margin-right: auto;max-width: 1280px;padding-right: 20px;padding-left: 20px;font-family: Roboto, sans-serif;">
-    <div class="row intro" style="width: 1024px;">
-        <div class="col-9 col-sm-12 col-md-9 col-lg-9 col-xl-9" style="max-width: none;width: auto;">
-            <div class="intro" style="max-width: none;margin-left: 0px;margin-right: 0px;padding-top: 180px;padding-bottom: 200px;">
-                <h1 class="text-left" style="font-family: Roboto, sans-serif;color: #71706e;font-weight: bold;">Nice to meet you. <br>I'm Hadi, a UX/UI Designer from Singapore.</h1>
-                <p class="text-left" style="padding-top: 40px;font-family: Roboto, sans-serif;color: #71706e;">I'm in the midst of building my new portfolio. Meanwhile, you can view my graphic design works or reach out to me below.</p>
-                <p><a class="btn btn-primary" role="button" style="margin-right: 20px;" href="https://cargocollective.com/hadimuhsin/">Portfolio</a><a class="btn btn-primary" role="button" style="margin-right: 20px;" href="https://www.linkedin.com/in/hadimuhsin/">Linkedin</a>
-                    <a
-                        class="btn btn-primary" role="button" href="mailto:hello@hadimuhsin.com">Mail</a>
+<body class="d-flex">
+    <nav class="navbar navbar-light navbar-expand fixed-top navbar">
+        <div class="container-fluid"><a class="navbar-brand text-primary" href="index.html"><strong>Hadi Muhsin</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="navbar-toggler-icon text-secondary"><i class="material-icons" style="font-size: 24px;">menu</i></span></button>
+            <div
+                class="collapse navbar-collapse text-left" id="navcol-2">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-primary" href="#"><strong>About</strong></a></li>
+                    <li class="nav-item" role="presentation" style="padding-right: 0px;"><a class="nav-link active text-secondary" href="#"></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container" style="max-width: 1024px;">
+        <div class="row highlight">
+            <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 highlight" data-aos="fade-down" data-aos-duration="600">
+                <h1 class="text-left text-primary"><strong>Hey there. I'm Hadi, a UX/UI designer from Singapore.</strong><br></h1>
+                <p class="text-primary">I'm in the midst of building my portfolio. Meanwhile, feel free to reach to me!</p>
+                <p><a class="btn btn-primary bg-secondary shadow-sm" role="button" href="https://cargocollective.com/hadimuhsin/"><strong>Portfolio</strong></a><a class="btn btn-primary bg-secondary shadow-sm" role="button" href="https://www.linkedin.com/in/hadimuhsin/"><strong>Linkedin</strong></a>
+                    <button
+                        class="btn btn-primary bg-secondary shadow-sm" type="button"><strong>Mail</strong></button>
                 </p>
+            </div>
+        </div>
+        <div class="row projects">
+            <div class="col-auto col-sm-12 col-md-6 col-lg-6 col-xl-6 flex-grow-1 project-thumbnail" href="shoe-shopping.html/"><img class="img-fluid" src="assets/img/desk.jpg">
+                <h3 class="text-left text-primary name" style="padding-top: 20px;"><strong>MIMU</strong></h3>
+                <p class="text-left text-light project-thumbnail">Coming Soon</p>
+            </div>
+            <div class="col-auto col-sm-12 col-md-6 col-lg-6 col-xl-6 flex-grow-1 project-thumbnail" href="shoe-shopping.html/"><img class="img-fluid" src="assets/img/desk.jpg">
+                <h3 class="text-left text-primary name" style="padding-top: 20px;"><strong>Shoe Shopping Experience</strong></h3>
+                <p class="text-left text-light project-thumbnail">Coming Soon</p>
+            </div>
+        </div>
+        <div class="row highlight">
+            <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 highlight">
+                <h1 class="text-left text-primary"><strong>Like what you see?</strong></h1>
+                <p class="text-left text-primary">I'm available for hire.</p>
+                <p class="text-left"><button class="btn btn-primary bg-secondary shadow-sm" type="button"><strong>Hit Me Up</strong></button></p>
             </div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>
 
 </html>
