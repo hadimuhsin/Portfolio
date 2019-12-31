@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.7rem;
 }
 
 abbr[title], abbr[data-original-title] {
@@ -339,14 +340,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h1, .h1 {
   font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
 h2, .h2 {
   font-size: 2rem;
+  line-height: 2.7rem;
 }
 
 h3, .h3 {
   font-size: 1.75rem;
+  line-height: 2.4rem;
 }
 
 h4, .h4 {
@@ -355,11 +359,13 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 h6, .h6 {
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.7rem;
 }
 
 .lead {
@@ -2927,6 +2933,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   font-size: 20px;
   max-width: 1140px;
   margin: 0 auto;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .navbar > .container, .navbar > .container-fluid {
@@ -9749,5 +9756,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .project-thumbnail a:hover {
   text-decoration: none;
+}
+
+dl, ol, ul {
+  line-height: 1.7rem;
+}
+
+.row.about {
+  padding: 15px 0px;
+}
+
+.resume {
+  padding: 15px 0px;
 }
 
