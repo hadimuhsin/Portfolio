@@ -359,7 +359,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .lead {
@@ -9730,10 +9730,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 60px;
 }
 
-.container {
-  /*max-width: 1024px;*/
-}
-
 .row.case-study-summary {
   padding: 20px 0px;
 }
@@ -9749,5 +9745,9 @@ a.text-dark:hover, a.text-dark:focus {
 .row.footer {
   padding: 15px 0px 90px;
   border-top: 1px solid rgb(211,216,210);
+}
+
+.project-thumbnail a:hover {
+  text-decoration: none;
 }
 
