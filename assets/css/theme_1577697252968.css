@@ -9771,3 +9771,17 @@ dl, ol, ul {
   padding: 15px 0px;
 }
 
+.img-large {
+  height: auto;
+  max-width: 100%;
+  margin: 15px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0px;
+}
+
