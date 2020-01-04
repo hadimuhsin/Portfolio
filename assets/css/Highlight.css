@@ -1,0 +1,87 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+.text-primary {
+  color: #71706e !important;
+}
+
+.text-secondary {
+  color: #E7C01F !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+a {
+  color: #71706e;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #4a4a48;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-primary {
+  color: #71706e !important;
+}
+
+.text-secondary {
+  color: #E7C01F !important;
+}
+
+.row.highlight {
+  padding: 90px 0px;
+}
+
