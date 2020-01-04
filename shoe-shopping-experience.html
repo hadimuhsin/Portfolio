@@ -11,13 +11,52 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Highlight.css">
     <link rel="stylesheet" href="assets/css/theme_1577697252968.css">
 </head>
 
 <body class="d-flex">
     <nav class="navbar navbar-light navbar-expand fixed-top navbar">
-        <div class="container"><a class="navbar-brand text-primary" href="index.html">Hadi Muhsin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="navbar-toggler-icon text-secondary"><i class="material-icons" style="font-size: 24px;">menu</i></span></button>
+        <div class="container"><style>
+header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 0px solid #ccc;
+}
+
+.header-proper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scroll-line {
+  height: 3px;
+  margin-bottom: -2px;
+  background: #e7c01f;
+  width: 0%;
+}
+</style>
+
+<header>
+  <div class="header-proper">
+  </div>
+  <div class="scroll-line"></div>
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+//capture scroll any percentage
+$(window).scroll(function(){
+var wintop = $(window).scrollTop(), docheight = 
+    
+    $(document).height(), winheight = $(window).height();
+ 			var scrolled = (wintop/(docheight-winheight))*100;
+  
+  		$('.scroll-line').css('width', (scrolled + '%'));
+});
+</script><a class="navbar-brand text-primary" href="index.html">Hadi Muhsin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="navbar-toggler-icon text-secondary"><i class="material-icons" style="font-size: 24px;">menu</i></span></button>
             <div
                 class="collapse navbar-collapse text-left" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
@@ -65,7 +104,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12"><img class="wrapper" src="assets/img/shoe-shopping-the-challenge-1.jpg"></div>
+            <div class="col-12"><img class="wrapper" src="assets/img/shoe-shopping-the-challenge-1.jpg">
+                <p class="text-primary">Source: Unsplash</p>
+            </div>
         </div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -120,7 +161,7 @@
                 <h5 class="text-primary"><strong>Time Issues</strong><br></h5>
                 <ul>
                     <li class="text-primary">Customers had a lot of idle time waiting for staff to come back with their shoes.<br></li>
-                    <li class="text-primary">Staff had to make multiple trips to the stockroom to get sizes for different shoes for the same customer.</li>
+                    <li class="text-primary">Staff had to make multiple trips to the stockroom to get sizes for different shoes for the same customer.<br><br></li>
                 </ul>
                 <p class="text-primary">We were overwhelmed by the vast findings of the online and offline shoe shopping experience. Due to the limited time, we decided to prioritise on the in-store shopping experience and consider online as the next steps. </p>
             </div>

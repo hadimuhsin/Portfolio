@@ -11,13 +11,52 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Highlight.css">
     <link rel="stylesheet" href="assets/css/theme_1577697252968.css">
 </head>
 
 <body class="d-flex">
     <nav class="navbar navbar-light navbar-expand fixed-top navbar">
-        <div class="container"><a class="navbar-brand text-primary" href="index.html">Hadi Muhsin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="navbar-toggler-icon text-secondary"><i class="material-icons" style="font-size: 24px;">menu</i></span></button>
+        <div class="container"><style>
+header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 0px solid #ccc;
+}
+
+.header-proper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scroll-line {
+  height: 3px;
+  margin-bottom: -2px;
+  background: #e7c01f;
+  width: 0%;
+}
+</style>
+
+<header>
+  <div class="header-proper">
+  </div>
+  <div class="scroll-line"></div>
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+//capture scroll any percentage
+$(window).scroll(function(){
+var wintop = $(window).scrollTop(), docheight = 
+    
+    $(document).height(), winheight = $(window).height();
+ 			var scrolled = (wintop/(docheight-winheight))*100;
+  
+  		$('.scroll-line').css('width', (scrolled + '%'));
+});
+</script><a class="navbar-brand text-primary" href="index.html">Hadi Muhsin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="navbar-toggler-icon text-secondary"><i class="material-icons" style="font-size: 24px;">menu</i></span></button>
             <div
                 class="collapse navbar-collapse text-left" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
@@ -34,7 +73,9 @@
                 <h6 class="text-light"><strong>App design</strong></h6>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 256px;padding-bottom: 0px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-outcomes-4.jpg"></div>
+        </div>
         <div class="row case-study-summary">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-bottom: 30px;">
                 <h6 class="text-secondary"><strong>Summary</strong></h6>
@@ -65,7 +106,11 @@
                     health issues during their motherhood experience. <br></h5>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;padding-bottom: 0px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-challenge-1.jpg">
+                <p class="text-primary">Source: Unsplash</p>
+            </div>
+        </div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2 class="text-secondary">The Research Methods</h2>
@@ -101,18 +146,28 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;padding-bottom: 0px;margin-bottom: 15px;"></div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;padding-bottom: 0px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-discovery-1.jpg"></div>
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-discovery-2.jpg"></div>
+        </div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
-                <h5 class="text-primary">Mothers are more concerned for their baby than themselves.<br></h5>
-                <h5 class="text-primary">They research heavily for their baby and not themselves.<br></h5>
-                <h5 class="text-primary">They don’t practice mindfulness.&nbsp;<br><br></h5>
+                <h5 class="text-primary"><strong>Wellness Issue</strong></h5>
+                <ul>
+                    <li class="text-primary">Mothers are more concerned for their baby than themselves.</li>
+                </ul>
+                <h5 class="text-primary"><strong>Mindfulness Issue</strong></h5>
+                <ul>
+                    <li class="text-primary">They don’t practice mindfulness.&nbsp;<br></li>
+                </ul>
+                <h5 class="text-primary"><strong>Information-seeking Issue</strong></h5>
+                <ul>
+                    <li class="text-primary">They research heavily for their baby and not themselves.<br><br></li>
+                </ul>
                 <p class="text-primary">We were overwhelmed by the vast findings of the prenatal, labour and postnatal experiences. Due to the limited time, we decided to prioritise on the prenatal experience and consider the other stages as the next steps. </p>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;padding-bottom: 0px;margin-bottom: 15px;"></div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2 class="text-secondary">The Definition</h2>
@@ -121,7 +176,9 @@
                 <h5 class="text-primary">Following our findings, we created a persona to help us focus on the pregnant woman’s ideal goals and frustrations.<br></h5>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;padding-bottom: 0px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-definition-1.jpg"></div>
+        </div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
@@ -142,14 +199,22 @@
                 <h2 class="text-secondary">The Development</h2>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
-                <h5 class="text-primary">We conducted a comparative analysis to understand the solutions available in the market that Lauren would ideally need. We compared with mobile apps on mindfulness, wellness tracking and prenatal/postnatal information.<br></h5>
+                <h5 class="text-primary">We conducted a comparative analysis to understand the solutions available in the market that Lauren would ideally need. We compared with 9 mobile apps on prenatal/postnatal information, mindfulness and wellness tracking.<br></h5>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
-        <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-development-1.jpg">
+                <p class="text-primary">3 out of the 9 apps from our comparative analysis.</p>
             </div>
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-development-2.jpg">
+                <p class="text-primary">Wireframing</p>
+            </div>
+            <div class="col-12"><img class="wrapper" src="assets/img/mimu-the-development-3.jpg">
+                <p class="text-primary">1st iteration prototype</p>
+            </div>
+        </div>
+        <div class="row case-study-outline">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-development-5.jpg"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Tailored content to inform</strong><br></h5>
                 <p class="text-primary">The app encourages Lauren to key in her <strong>moods and symptoms</strong>. With these, content is customised to guide her through her challenges in a more positive manner. If she chooses not to key in, she will be recommended content
@@ -158,9 +223,7 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
-            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-development-6.jpg"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Encourage through journaling</strong><br></h5>
                 <p class="text-primary">Lauren can also log her thoughts, and upload photos into the app to remind her of the beautiful moments. These inputs will be<strong> collated into a journal and a gallery</strong>. These can also be put together in a digital or print
@@ -168,9 +231,7 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
-            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-development-7.jpg"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Encourage with stats</strong><br></h5>
                 <p class="text-primary">The Stats screen is a <strong>log of Lauren’s moods, priorities and accessed content</strong>. She can <strong>earn badges</strong> to motivate her to read, watch and listen. She can customise and download the information she wants into
@@ -178,9 +239,7 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
-            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-development-8.jpg"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Empower through helpline</strong><br></h5>
                 <p class="text-primary">Lauren is able to reach out to <strong>healthcare professionals</strong> when she needs to cope with issues like depression, anxiety and breastfeeding difficulties.&nbsp;<br></p><a class="btn btn-light shadow-sm" role="button" href="https://www.figma.com/proto/i9cA7H61M0oi0EqTmsxQVN/MIMU-Prototype?node-id=180%3A1268&amp;viewport=905%2C-249%2C0.07706794887781143&amp;scaling=scale-down"
@@ -194,10 +253,12 @@
                     (SDS) for further quantitative analysis.&nbsp;<br><br>As the 1st test findings were vast, we prioritised the issues through affinity diagramming. With the prioritised findings, we made improvements to the 2nd prototype iteration.&nbsp;<br></p>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-development-9.jpg"></div>
+        </div>
         <div class="row case-study-outline">
-            <div class="col">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-development-10.jpg">
+                <p class="text-primary">1st iteration (left), 2nd iteration (right).</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Key Issues – Input</strong><br></h5>
@@ -211,8 +272,8 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-development-11.jpg">
+                <p class="text-primary">1st iteration (left), 2nd iteration (right).</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Key Issues – Home Screen</strong><br></h5>
@@ -226,8 +287,8 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-development-12.jpg">
+                <p class="text-primary">1st iteration (left), 2nd iteration (right).</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Key Issues – Journal</strong><br></h5>
@@ -247,8 +308,8 @@
             </div>
         </div>
         <div class="row case-study-outline">
-            <div class="col">
-                <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-development-13.jpg">
+                <p class="text-primary">1st iteration (left), 2nd iteration (right).</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Key Issues – Helpline</strong><br></h5>
@@ -274,29 +335,30 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-outcomes-1.jpg">
+                <p class="text-primary">Semantic Differential Scale (SDS) result from 1st iteration prototype testing.</p>
+            </div>
+        </div>
         <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-outcomes-2.jpg">
+                <p class="text-primary">Semantic Differential Scale (SDS) result from 1st iteration prototype testing.</p>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Journaling is still confusing</strong><br></h5>
                 <ul>
                     <li class="text-primary">Although information is clear, some participants were <strong>confused</strong> with the placement of the statistics and the functions of the buttons.<br></li>
                 </ul>
-            </div>
-        </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
-        <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Connect with more to empower</strong><br></h5>
                 <ul>
                     <li class="text-primary">Other than seeking professional help, they would also like to reach out to mummy support groups to connect with other pregnant mothers.<br></li>
                 </ul>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
         <div class="row case-study-outline">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="wrapper" src="assets/img/mimu-the-outcomes-3.jpg">
+                <p class="text-primary">Semantic Differential Scale (SDS) result from 1st iteration prototype testing.</p>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 case-study-summary">
                 <h5 class="text-primary"><strong>Overall Impression</strong><br></h5>
                 <ul>
@@ -305,7 +367,9 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 100%;background-color: #d7d7d6;height: 512px;margin-bottom: 15px;"></div>
+        <div class="row">
+            <div class="col"><img class="wrapper" src="assets/img/mimu-the-outcomes-4.jpg"></div>
+        </div>
         <div class="row case-study-outline">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2 class="text-secondary">The Next Steps</h2>
