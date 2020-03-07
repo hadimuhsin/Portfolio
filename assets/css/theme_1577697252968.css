@@ -1,13 +1,12 @@
-/*  Created with Themestr.app  */
+/* Created with Themestr.app */
 
-/* ! `Custom` Bootstrap 4 theme  */
+/* ! `Custom` Bootstrap 4 theme */
 
 /* !
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-  */
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 
 :root {
   --blue: #007bff;
@@ -9787,5 +9786,12 @@ dl, ol, ul {
 
 #projecthover:hover {
   box-shadow: 0px 4px 8px rgba(211,216,210,.6);
+}
+
+#projecthover {
+}
+
+#projecthover {
+  margin-bottom: 90px;
 }
 
